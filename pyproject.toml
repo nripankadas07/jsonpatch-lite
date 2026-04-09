@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonpatch-lite"
+version = "0.1.0"
+description = "Minimal RFC-6902 JSON Patch implementation, zero dependencies."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nripanka Das", email = "nripankadas@gmail.com" }]
+keywords = ["json", "patch", "rfc6902", "rfc6901", "json-pointer"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/nripankadas07/jsonpatch-lite"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
