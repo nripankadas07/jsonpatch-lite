@@ -7,7 +7,7 @@ for Python 3.10+. Pure functions, immutable inputs, descriptive errors.
 ## Install
 
 ```bash
-pip install jsonpatch-lite
+python -m pip install -e .
 ```
 
 ## Usage
